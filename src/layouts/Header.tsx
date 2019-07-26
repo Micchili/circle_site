@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { CircleName } from '../component/CircleName'
 import { CircleImage } from '../component/CircleImage'
-import { Center } from '../styles/Center'
+import Center from '../styles/Center'
 import { Header } from '../styles/Header'
 
 const FrestView: React.FC = () => {

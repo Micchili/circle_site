@@ -3,7 +3,6 @@ import Top from './pages/top'
 import { Global } from '@emotion/core'
 import styles from './styles/app'
 
-
 const App :React.FC = () => {
   return (
     <div>
