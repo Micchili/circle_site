@@ -1,10 +1,15 @@
 import React from 'react';
-import './App.css';
+import Top from './pages/top'
+import { Global } from '@emotion/core'
+import styles from './styles/app'
 
-const App = () => {
+
+const App :React.FC = () => {
   return (
-    
-    <div>ホゲヌルフーバー</div>
+    <div>
+      <Global styles={styles} />
+      <Top />
+    </div>
   )
 }
 
