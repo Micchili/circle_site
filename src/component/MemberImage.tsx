@@ -1,15 +1,17 @@
 import * as React from 'react'
-import MemberLogo from '../image/sChara.png'
 import { MemberImageChara } from '../styles/MemberImage'
+import gouten from '../image/gouten.jpg'
+import mil from '../image/mil.png'
 
 interface IProps {
-	memberLogo?: string
+	memberLogo?: boolean
 }
 
-export const MemberImage: React.FC<IProps> = (memberLogo) => {
+export const MemberImage: React.FC<IProps> = (props) => {
+	const logo = props.memberLogo ? gouten : mil
 	return (
 		<>
-			<MemberImageChara src={memberLogo + '.png'} />
+			<MemberImageChara src={logo} />
 		</>
-  )
+	)
 }
