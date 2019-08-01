@@ -6,9 +6,9 @@ type IProps = {
 }
 
 export const MemberColor = styled.section`
-  background-color: #${(props :IProps) => props.color};
+  background-color: #${(props: IProps) => props.color};
 	text-align: center;
   width: 50vw;
-	height: 300px;
+	height: 400px;
 	font-size: 40px;
 `

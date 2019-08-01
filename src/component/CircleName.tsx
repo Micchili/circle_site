@@ -4,7 +4,7 @@ import { HeaderCircleName } from '../styles/CircleName'
 export const CircleName :React.FC = () => {
   return(
       <HeaderCircleName>
-        <h1>HogeNullFooBar</h1>
+        <h1>ホゲヌルフーバー</h1>
       </HeaderCircleName>
   )
 }

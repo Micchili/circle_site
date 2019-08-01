@@ -1,20 +1,18 @@
 import * as React from 'react'
 import Center from '../styles/Center'
 import { MemberIntroduction } from '../component/MemberIntroductio'
-import { MemberImage } from '../component/MemberImage'
+import { CircleTextTitle } from '../component/CircleTextTitle'
 
-const Member:React.FC= () => {
+
+const Member: React.FC = () => {
 	return (
-		<div>
+		<article>
+			<CircleTextTitle title={'Member'} />
 			<Center>
-        <MemberIntroduction memberName={'Gouten'} memberColor={'E60012'}>
-					<MemberImage memberLogo={true} />
-				</MemberIntroduction>
-				<MemberIntroduction memberName={'Mil'} memberColor={'00A0E9'}>
-					<MemberImage memberLogo={false} />
-				</MemberIntroduction>
+				<MemberIntroduction memberName={'Gouten'} memberColor={'E60012'} membarLogo={'Gouten'} />
+				<MemberIntroduction memberName={'Mil'} memberColor={'00A0E9'} membarLogo={'Mil'} />
 			</Center>
-		</div>
+		</article>
 	)
 }
 
