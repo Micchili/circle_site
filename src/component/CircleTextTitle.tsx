@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { TextTitle } from '../styles/CircleTextTitle'
 
+
 type IProps = {
 	title: string
 }
