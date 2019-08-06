@@ -4,8 +4,6 @@ import { HeaderCircleImage } from '../styles/CircleImage'
 
 export const CircleImage :React.FC = () => { 
 	return (
-		<div>
 			<HeaderCircleImage src={logo} alt="hogenull" />
-		</div>
 	)
 }
