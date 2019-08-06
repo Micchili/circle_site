@@ -2,12 +2,18 @@ import * as React from 'react'
 import { CircleTextTitle } from '../component/CircleTextTitle'
 import { OverViewSection } from '../styles/OverView'
 import { CircleDescription } from '../component/CircleDescription'
+import { CircleRoll } from '../styles/CircleRoll';
+import Circle from '../image/circle.jpg' 
+import Center from '../styles/Center';
 
 const OverView:React.FC = () => {
   return(
     <OverViewSection>
 		  <CircleTextTitle title={'Shitty Circle'} />
-			<CircleDescription text={'ホゲヌルフーバーは皆様に虚無をお届けするために結成したサークルです。'} />
+			<Center>
+				<CircleDescription text={'ホゲヌルフーバーは皆様に虚無をお届けするために結成したサークルです。'} />
+				<CircleRoll src={Circle} />
+			</Center>
 			<br />
 			<CircleTextTitle title={'Circle Discription'} />
 			<CircleDescription text={'ホゲヌルフーバーとは、意味の無いことを示す４つの単語[hoge,null,foo,bar]を組み合わせて出来た名前です。'} />
