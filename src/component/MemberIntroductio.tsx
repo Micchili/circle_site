@@ -7,11 +7,11 @@ import Mil from '../image/mil.png'
 type IProps = {
 	memberColor?: string
 	memberName?: string
-	membarLogo?: string
+	membarLogo?: 'Gouten' | 'Mil'
 }
 
 export const MemberIntroduction: React.FC<IProps> = (props) => {
-  const logo:string = props.membarLogo  === 'Gouten' ? Gouten : Mil
+  const logo:string = props.membarLogo === 'Gouten' ? Gouten : Mil
 	return (
 		<>
 			<MemberColor color={props.memberColor}>
