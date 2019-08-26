@@ -4,22 +4,22 @@ import { OverViewSection } from '../styles/OverView'
 import { CircleDescription } from '../component/CircleDescription'
 import { CircleRoll } from '../styles/CircleRoll';
 import Circle from '../image/circle.jpg' 
-import Center from '../styles/Center';
+import { OverViewCenterStart } from '../styles/OverViewCenterStart';
 
 const OverView:React.FC = () => {
   return(
     <OverViewSection>
 		  <CircleTextTitle title={'Shitty Circle'} />
-			<Center>
+			<OverViewCenterStart>
 				<CircleDescription text={'ホゲヌルフーバーは皆様に虚無をお届けするために結成したサークルです。'} />
 				<CircleRoll src={Circle} />
-			</Center>
+			</OverViewCenterStart>
 			<br />
 			<CircleTextTitle title={'Circle Discription'} />
-			<CircleDescription text={'ホゲヌルフーバーとは、意味の無いことを示す４つの単語[hoge,null,foo,bar]を組み合わせて出来た名前です。'} />
+			<CircleDescription text={'ホゲヌルフーバーとは、意味の無いことを示す４つの単語 hoge null foo bar を組み合わせて出来た名前です。'} />
 			<CircleDescription text={'hogeは日本語圏のプログラマーによく使われる単語です。'} />
 			<CircleDescription text={'他にもpiyo,huga,hugeなどたくさんのバリエーションがあります。'} />
-			<CircleDescription text={'我々は{ 読んでホゲ！　聴いてフガ！}と感じられる無念無想な作品を提供していきます。'} />
+			<CircleDescription text={'我々は「読んでホゲ！　聴いてフガ！」と感じられる無念無想な作品を提供していきます。'} />
 		</OverViewSection>
 	)
 }

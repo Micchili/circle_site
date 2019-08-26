@@ -8,8 +8,8 @@
 }
 
 header {
-  font-family: hogenull;
+  font-family: hogenull,Quicksand, 游ゴシック体, "Yu Gothic", YuGothic,;
 }
 h2,p,section,article {
-  font-family: circleText;
+  font-family: circleText,Quicksand, 游ゴシック体, "Yu Gothic", YuGothic,;
 }
