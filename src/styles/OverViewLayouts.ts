@@ -1,5 +1,27 @@
 import styled from '@emotion/styled'
 
+export const OverViewCenterStart = styled.div`
+ display: flex;
+ justify-content: flex-start;
+`
+
+export const CircleRoll = styled.img`
+  width: 200px;
+  height: 200px;
+  animation: flip 5s linear infinite;
+  transform-style: preserve-3d;
+
+  @media screen and (max-width: 767px) {
+    height: 100px;
+    width: 100px;
+  }
+ 
+  @keyframes flip {
+    0%   { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+  }
+`
+
 export const OverViewSection = styled.section`
   display: flex;
   flex-direction: column;

@@ -1,14 +1,30 @@
 import transition from "styled-transition-group"
 
 const Fade = transition.div`
+  line-height: 70px;
   position:absolute;
   background-color: #${(props) => props.membarColor};
-  width: 710px;
-  height: 400px;
-	font-size: 40px;
   text-align: center;
-  margin-top: 47px;
-  ${(props) => props.membarPosition}: 650px;
+  ${(props) => props.membarPosition}: 0px;
+
+  @media screen and (min-width: 1024px) {
+    line-height: 70px;
+    width: 550px;
+    height: 400px;
+	  font-size: 40px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    line-height: 70px;
+    width: 550px;
+    height: 400px;
+	  font-size: 37px;
+  }
+  @media screen and (max-width: 767px) {
+    line-height: 23px;
+    width: 175px;
+    height: 175px;
+	  font-size: 14px;
+  }
   &:enter {
     opacity: 0.01;
   }
@@ -23,6 +39,7 @@ const Fade = transition.div`
     opacity: 0.01;
     transition: opacity 300ms ease-in;
   }
+
 `
 
 export default Fade
